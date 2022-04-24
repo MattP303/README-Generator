@@ -1,0 +1,24 @@
+{
+  "name": "inquirer",
+  "version": "1.0.0",
+  "description": "Instantly generate a high quality and professional README for your next project with just a few questions in your command line.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattP303/README-Generator.git"
+  },
+  "author": "Matthew Pike",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattP303/README-Generator/issues"
+  },
+  "homepage": "https://github.com/MattP303/README-Generator#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^8.2.2"
+  }
+}

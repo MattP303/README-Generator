@@ -1,7 +1,7 @@
 // Include NPM packages needed to function
 const inquirer = require("inquirer");
 const fs = require('fs');
-const generate = require('./utils/generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 const Choices = require("inquirer/lib/objects/choices");
 
 
@@ -34,11 +34,6 @@ const questions = [
     },
     {
         type: "input",
-        name: "contributionGuidelines",
-        message: "Please provide the project licence or your badge link"
-    },
-    {
-        type: "input",
         name: "tests",
         message: "Please share any tests for this project."
     },
@@ -62,14 +57,14 @@ const questions = [
 
 // Function to create the new README file with the user(s) input(s)
 function createMarkdown(fileName, data) {
- fs.writeFile(fileName, data, function(err) {
-     if (err) {
-         return console.log("Sorry, there was an issue creating your README. Please try again or contact the developer if the issue persists.");
-     }
-     else {
-         console.log('Working a little magic... and abracadabra, your README is ready to view!');
-     }
- })
+    fs.writeFile(fileName, data, function(err) {
+        if (err) {
+            return console.log("Sorry, there was an issue creating your README. Please try again or contact the developer if the issue persists.");
+        }
+        else {
+            console.log('Working a little magic... and abracadabra, your README is ready to view!');
+        }
+    })
 };
 
 // Function to initilaize the README Generator

@@ -1,45 +1,44 @@
 function createMarkdown(data) {
-    return `
-  # **${data.title}**
+return `
+# **${data.title}**
 
-  ${data.badge}
+${data.badge}
 
-  ## Description 
-  ${data.description}
-  
-  ## Table of contents
-  - [Description](#Description)
-  - [Installation](#Installation)
-  - [Usage](#Usage)
-  - [Contribution Guidelines](#Contribution Guidelines)
-  - [Test](#Test)
-  - [License](#License)
-  - [GitHub](#GitHub)
-  - [Contact](#Contact) 
+## Description 
+${data.description}
 
-  ## Installation
-  ${data.installationInstructions}
+## Table of contents
+- [Description](#description)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Test](#test)
+- [License](#license)
+- [GitHub](#github)
+- [Contact](#contact) 
 
-  ## Usage
-  ${data.usageInformation}
+## Installation
+${data.installationInstructions}
 
-  ## Contribution Guidelines
-  ${data.contributionGuidelines}
+## Usage
+${data.usageInformation}
 
-  ## Test
-  ${data.tests}
+## Contribution Guidelines
+${data.contributionGuidelines}
 
-  ## License
-  ${data.licenseType}
+## Test
+${data.tests}
 
-  ## GitHub
-  ${data.githubUsername}
+## License
+${data.licenseType}
 
-  ## Contact
-  ${data.email}
+## GitHub
+${data.githubUsername}
 
-  `;
+## Contact
+${data.email}
 
-  }
-  
-  module.exports = createMarkdown;
+`;
+}
+
+module.exports = createMarkdown;
