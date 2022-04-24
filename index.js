@@ -4,7 +4,6 @@ const fs = require('fs');
 const generateMarkdown = require('./utils/generateMarkdown');
 const Choices = require("inquirer/lib/objects/choices");
 
-
 // Define array of user questions and prompt types
 const questions = [
     {
@@ -68,10 +67,11 @@ function createMarkdown(fileName, data) {
 };
 
 // Function to initilaize the README Generator
+// Change './Example/README.md' to the location you would like your README to output
 function init() {
     inquirer.prompt(questions)
     .then(function(data){
-        createMarkdown('README.md', generateMarkdown(data));
+        createMarkdown('./Example/README.md', generateMarkdown(data));
     })
 };
 
